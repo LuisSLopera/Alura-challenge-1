@@ -26,6 +26,7 @@ function sortearAmigo() {
     alert("No se puede sortear, no hay participantes");
     return;
   }
+  console.log(`La cantidad de participantes es: ${amigos.length}`)
   let numGanador = Math.floor(Math.random() * amigos.length);
   let ganador = amigos[numGanador];
   console.log(`El numero ganador es ${numGanador}`);
