@@ -19,7 +19,6 @@ function agregarAmigo() {
     elementoLi.textContent = amigos[i];
     listaHTML.appendChild(elementoLi);
   }
-  console.log(amigos);
 }
 
 function sortearAmigo() {
@@ -27,6 +26,10 @@ function sortearAmigo() {
     alert("No se puede sortear, no hay participantes");
     return;
   }
+  let numGanador = Math.floor(Math.random() * amigos.length);
+  let ganador = amigos[numGanador];
+  console.log(`El numero ganador es ${numGanador}`);
+  document.getElementById("resultado").innerHTML = `El ganador es: ${ganador}`;
 }
 
 /* Funcion alternativa para Ingresar usuarios
